@@ -1,0 +1,31 @@
+.Grid {
+    border: 1px solid black;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.Grid input, .Grid span {
+    margin: 10px 5px;
+    width: calc(100% - 20px);
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.Grid div {
+    width: 25%;
+}
+
+@media all and (max-width: 720px) {
+    .Grid div {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 360px) {
+    .Grid div {
+        width: 100%;
+
+    }
+}
